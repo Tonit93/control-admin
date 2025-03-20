@@ -7,25 +7,27 @@
 body{
     
     font-family: "Oswald", serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+   
+}
+.header-app-sidebar-container{
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+.header-app-sidebar {
+    
  
-}
-
-.header-app-sidebar{
-    width: 300px;
+    /* border: 1px solid red; */
     background-color: #1992D4;
-    position: fixed;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;   
+    
 }
 
-.main-sidebar-header{
-    display: flex;
-    align-items: center;
-    margin: 0 40px;
+.app-sidebar {
+
+}
+
+.main-sidebar-header {
+
 }
 
 .main-sidebar-header p{
@@ -35,19 +37,15 @@ body{
     width: 100px;
 }
 
-.main-navbar{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.header-logo  {
+.header-logo {
     text-decoration: none;
+}
+.main-navbar {
+    
 }
 
 .main-navbar .container{
-    width: 300px;
-    display: block;
+    
 }
 
 ul{
@@ -55,10 +53,10 @@ ul{
 }
 
 .container ul {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin-top: 35px;
+    margin-top: 35px; */
 }
 
 .container li{
@@ -70,8 +68,6 @@ li{
     transition: transform 0.4s;
     
 }
-
-
 
 li svg{
     padding-right: 10px;
@@ -91,35 +87,24 @@ li:hover{
     transform: scale(1.1);
 }
 
-/* info-wrapper */
-
-.info-wrapper{
-    position: fixed;
-    width: calc(100% - 300px);
-    min-height: 100%;
-    left: 300px;
-    overflow-x: hidden ;
+.main-nabar-logo {
 }
-    
-.info-header{
-    height: 180px;
+.container {
+}
+.info-wrapper {
+
+}
+.info-header {
+    display: grid;
+    grid-template-rows: 90px 90px ;
+
     background-color: #ffffff;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.info-header-name{
-    font-weight: bold;
-    font-size: 18px;
+.info-header-search {
+    /* border: 1px solid red; */
 }
-
-.info-header-search{
-   
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-info-search{
+.img-info-search {
     width: 30px;
     height: 30px;
     transition: transform 0.7s;
@@ -129,7 +114,7 @@ li:hover{
     transform: scale(1.2);
 }
 
-.info-search-input{
+.info-search-input {
     height: 30px;
     width: 600px;
     background-color: #E2E8F0;
@@ -137,15 +122,11 @@ li:hover{
     border: none;
     margin-left: 20px;
 }
-
-.info-profile-link{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    
+.info-search-input-js {
 }
-
-.info-profile-notifly{
+.info-profile-link {
+}
+.info-profile-notifly {
     width: 25px;
     height: 25px;
     margin: 0 20px;
@@ -155,8 +136,7 @@ li:hover{
     animation: tilt-shaking 0.25s infinite;
 }
 
-
-.info-porofile-photo{
+.info-porofile-photo {
     width: 45px;
     height: 45px;
     border:none;
@@ -170,42 +150,32 @@ li:hover{
 
     margin: 0 20px;
 }
+
 .info-porofile-photo img{
     width: 40px;
     height: 40px;
     margin-bottom: 6px;
 }
 
-.info-profile-name{
+.info-profile-name {
     font-weight: bold;
     font-size: 18px;
     margin: 0 20px;
+    width: 150px;
+}
+.info-header-account {
+}
+.info-header-account-link {
 }
 
-
-.info-header-account{
-    width: 100%; 
+.info-header-account-link-container {
+   
 }
 
-.info-header-account-link{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 50px;
-    
-}
-
-.info-header-account-link-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.info-header-account-link-wrapper{ 
+.info-header-account-link-wrapper {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-
 }
 
 button{
@@ -227,40 +197,38 @@ button:hover{
     background: #95bdd3 ; 
 }
 
-/* section */
+.info-header-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+.info-header-account-buttons {
+}
+/* ---------section---------------- */
 
 .section {
-    height: auto;
-    margin-top: 5px;
-    background-color: #E2E8F0;  
+    height: 1200px;
+    /* border: 1px solid red; */
 }
-
 .main-content {
-  padding: 20px;
 }
-
-.main-content-heading{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 9%;
-    padding-left: 11px;
+.main-content-heading {
+    display: grid;
+    grid-template-rows: 50px ;
+    grid-template-columns: 1000px 300px;
 }
-
 .main-content-colums {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1000px 500px ;
  
 }
-  
-.main-content-colums-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
+.main-content-colums-wrapper {
+    display: grid;
+    grid-template-columns: 380px 380px ;
+    gap: 30px;
+    margin: 30px;
 }
-
-.main-content-card{
-    margin: 10px;
+.main-content-card {
+    /* margin: 10px; */
     width: 380px;
     height: 215px;
     background-color: #fff;
@@ -269,16 +237,16 @@ button:hover{
     border-left: 7px solid #F0B42A;
 }
 
-.main-content-card-content{
-    padding: 30px 30px;
-}
-
 .main-content-card-content p{
     width: 90%;
     color: #737373;
     font-size: 18px;
 }
-
+.main-content-card-content {
+    margin: 20px;
+    
+    
+}
 .main-content-card-item{
     color: #000;
     font-size: 18px;
@@ -292,6 +260,7 @@ button:hover{
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+    padding: 20px;
     
 }
 
@@ -351,10 +320,10 @@ button:hover{
     background-color: #fff;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px ;
+    padding: 20px ; */
 }
 
 .main-content-info-tranding-content .info-profile-link{
@@ -362,17 +331,14 @@ padding: 10px 0 0;
 
     
 }
-
+.main-content-info-tranding-content {
+}
+.info-profile-link-wrapper {
+}
+.info-profile-link-name {
+}
 .info-profile-link-text{
     margin-top: 5px;
     color: #737373;
     font-size: 12px;
 }
-
-@keyframes tilt-shaking {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0eg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
-  }
